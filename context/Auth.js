@@ -17,6 +17,7 @@ const prod = {
 };
 
 if (!getApps().length) {
+  console.log(process.env.NODE_ENV);
   initializeApp(prod);
 }
 
